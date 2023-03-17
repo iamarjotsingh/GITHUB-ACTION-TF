@@ -41,7 +41,7 @@ jobs:
       - name: terraform init  
         run: |
           cd EC2
-          terraform init -reconfigure -backend-config="bucket=${{env.bucket}}" -backend-config="key=${{env.tfstate}}"
+          terraform init -reconfigure -backend-config="bucket=${{env.bucket}}" -backend-config="key=${{env.tfstate}}" -backend-config="region=${{ env.aws-region }}"
       
       - name: terraform plan
         run: |
