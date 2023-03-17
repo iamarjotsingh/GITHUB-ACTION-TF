@@ -5,7 +5,7 @@ on:
  
     
 env:
-  bucket: amar-bucket
+  bucket: amar-bucket25
   tfstate: amartffile.tfstate
   
   aws-region: ap-south-1
