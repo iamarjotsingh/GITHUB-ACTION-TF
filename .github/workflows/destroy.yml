@@ -38,7 +38,7 @@ jobs:
       - name: terraform init  
         run: |
           cd EC2
-          terraform init -reconfigure -backend-config="bucket=${{env.bucket}}" -backend-config="key=${{env.tfstate}}" -backend-config="region=${{ env.aws_region }"
+          terraform init -reconfigure -backend-config="bucket=${{env.bucket}}" -backend-config="key=${{env.tfstate}}" -backend-config="region=${{ env.aws-region }"
       - name: terraform destroy
         run: |
           cd EC2
